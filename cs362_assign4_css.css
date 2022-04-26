@@ -1,0 +1,210 @@
+h1 {
+		color: #DE203A;
+		text-transform: uppercase;
+    font-family: Arial, Calibri, Verdana;
+    font-size: 48px;
+    padding: 10px;
+	  text-align: left;
+    background-color: #D9D7D7;
+    overflow:invisible;
+}
+
+h2 { 
+  color: #323233;
+	text-align: center;
+  font-size: 45px;
+  font-family: Arial, Calibri, Verdana;
+}
+
+h3 { 
+  color: #DE203A;
+  text-align: center;
+  font-size: 32px;
+  font-family: Arial, Calibri, Verdana;
+}
+
+p {
+   font-family: Arial, Calibri, Verdana;
+   font-size: 23px;
+   color: #030303;
+}
+
+h4 {
+  color: #DE203A;
+  font-family: Arial, Calibri, Verdana;
+}
+
+/* unvisited link */
+a:link {
+    color: #DE203A;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #DE203A;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: #DE203A;
+} 
+
+nav {
+  font-family: Arial, Calibri, Verdana;
+  text-align: right;
+  font-size: 24px;
+  margin: 25px;
+ }
+
+nav a {
+ color: #030303;
+ padding: 0px 10px;
+ text-decoration: underline !important;
+}
+
+.span24:hover {
+    background-color:#D9D7D7;
+}
+
+img:hover{
+  border: 10px solid #DE203A;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  font-family: Arial, Calibri, Verdana;
+}
+
+.banner {
+    background-color: #FDFDFE;
+    color: #030303;
+}
+
+.banner p{
+  text-align: center;
+}
+
+.margaux, .victoria {
+    text-align: center;
+    color: #030303;
+    background-color: #FDFDFE;
+}
+
+.margaux p, .victoria p {
+  text-align: left;
+  font-family: Arial, Calibri, Verdana;
+}
+
+p {
+  color: #030303;
+}
+
+.footer{
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (min-width:100px) and (max-width:749px) {
+   
+  body {
+    background-color: #030303;
+  }
+  
+  .filler, .pix {
+    display: none;
+  }
+
+  img {
+    display: none;
+   }
+
+  .section {
+    text-align: center;
+    background-color: #FDFDFE;
+  }
+
+  .span24 {
+    background-color: #FDFDFE;
+    color: #030303;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:750px) {
+  
+  body {
+    background-color: #6D6D70;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    background-color: #fff;
+    color: #444;
+  }
+
+  .filler {
+    background-color: #DE203A;
+    visibility: hidden;
+  }
+
+  img {
+    visibility: visible;
+    width: 200px;
+    height: 200px;
+    border: 4px solid;
+  }
+
+  .pix {
+    align-self: center;
+    justify-self: center;
+  }
+  
+  img {
+    border: 10px solid #3F3F40;
+  }
+  
+  .banner {
+    grid-column: 1 / 6;
+    background-color: #FDFDFE;
+    color: #030303;
+  }
+
+  .section {
+    grid-column: 2 / 5;
+    text-align: center;
+    background-color: #FDFDFE;
+  }
+
+  .margaux {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+
+  .victoria {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+  }
+
+  .span24 {
+    grid-column: 2 / 4;
+    background-color: #FDFDFE;
+    color: #030303;
+  }
+
+}
